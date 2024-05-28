@@ -8,7 +8,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 @Entity
-public class Admindto {
+public class Admin {
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	
@@ -48,7 +48,7 @@ public class Admindto {
 	public void setRecpie(List<Recipe> recpie) {
 		this.recpie = recpie;
 	}
-	public Admindto( String RestaurantName, String location, String password, List<Recipe> recpie) {
+	public Admin( String RestaurantName, String location, String password, List<Recipe> recpie) {
 		super();
 //		this.id = id;
 		this.RestaurantName = RestaurantName;
